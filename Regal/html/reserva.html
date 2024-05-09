@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#282DEB">
+    <link rel="icon" type="image/x-icon" href="../images/icon.png">
+    <link rel="stylesheet" href="../styles/reserva.css">
+    <title>Regal Hotel</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>
+            Reserve
+        </h1>
+        <nav>
+            <ul>
+                <li> <a href="faleconosco.html"> Contact </a> </li>
+                <li> <a href="index.html"> Images </a> </li>
+                <li> <a href="ohotel.html"> About </a> </li>
+                <li> <a href="acomodacoes.html"> Accommodations </a> </li>
+                <li> <a href="valores.html"> Values </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <h2>
+        Reserva online
+    </h2>
+    <div class="coluna-50" style="background-color: #ffffff">
+        <div class="reserva">
+            <section>
+                <form action="../php/reserva.php" method="POST">
+                    <fieldset>
+                        <div class="row-4"></div>
+                        <div class="'col-3"><legend><h1>reservation</h1> <Details></Details>
+                        </legend>
+                        <label for="data">Entry Date:</label>
+                        <input type="date" id="data" name="dt_entrada"><br>
+
+                        <br><label for="data">Departure Date:</label>
+                        <input type="date" id="data" name="dt_saidas"><br><br>
+                        <label for="number">number of guests:</label>
+                        <input type="number" id="hospedes" name="qt_hospedes" min="1" max="10" Step=1 value="1"><br><br>
+
+                        <label for="number">Double Beds:</label>
+                        <input type="number" name="qt_casal" min="1" max="5" Step=1 value="1"><br><br>
+
+                        <label for="number">Single bed:</label>
+                        <input type="number" name="qt_solteiro" min="1" max="10" Step=1 value="1"><br><br>
+
+                        <label for="acomodacoes">Accommodations</label>
+
+                        <select id="acomodacoes" name="acomodacoes">
+                            <option value="2">standard </option>
+                            <option value="2">lux</option>
+                        </select>
+                    </fieldset></div>
+
+                    <div class="col-3"></div>
+                        
+                    <br>
+                    <button type="submit" class="btn btn btn-success btn-lg" style="width: 120px;">Submit</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <img src="../images/whatsapp.png" alt="whatsapp" width="22"> <i> (45) 12345-6789 </i> <br>
+        <img src="../images/mail.png" alt="mail" width="22"> <i> regalproperties@gmail.com </i>
+        <hr>
+        <h3>
+            Regal Hotel | 2024
+        </h3>
+    </footer>
+
+</body>
+
+</html>
